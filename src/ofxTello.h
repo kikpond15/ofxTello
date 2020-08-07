@@ -12,6 +12,8 @@ public:
     void connect();
     void takeoff();
     void land();
+    void streamon();
+    void streamoff();
     void emergency();
     void up(int distance);
     void down(int distance);

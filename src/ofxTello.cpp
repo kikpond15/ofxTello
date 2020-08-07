@@ -32,6 +32,18 @@ void ofxTello::land(){
 }
 
 //--------------------------------------------------------------
+void ofxTello::streamon(){
+    string message = "streamon";
+    udpConnection.Send(message.c_str(), message.length());
+}
+
+//--------------------------------------------------------------
+void ofxTello::streamoff(){
+    string message = "streamoff";
+    udpConnection.Send(message.c_str(), message.length());
+}
+
+//--------------------------------------------------------------
 void ofxTello::emergency(){
     string message = "emergency";
     udpConnection.Send(message.c_str(), message.length());
